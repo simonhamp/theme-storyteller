@@ -1,30 +1,27 @@
-## Storyteller Theme ![Statamic 2.0](https://img.shields.io/badge/statamic-2.8-blue.svg?style=flat-square)
+# Storyteller Theme 2.0
 
-This site theme is designed to highlight the new [Bard Fieldtype](https://docs.statamic.com/fieldtypes/bard) and it's magnificent capabilities. It includes a number of pre-built Bard sets for long form content.
+This site theme is a fork of [Storyteller](https://github.com/statamic/theme-storyteller) by Statamic. It's not meant for production. It merely exists as a demonstration of how you could set up Tailwind in a Statamic theme.
 
-- Hero Blocks with background images and color/mix overlays
-- Photos
-- Video Embeds
-- Two Column Text
-
-## Screenshot:
-
-![Storyteller Preview](https://d.pr/i/VqnfH/aXEnVnAj5C+)
-
-Or you can see it in action at [new.jackmcdade.com](https://new.jackmcdade.com).
+The goal is a setup that allows you to use the full power of Tailwind to build an absolute minimal stylesheet. In most cases, you can reduce your stylesheet to less than 20% of its original size.
 
 ## Installing
 
 - Setup a fresh Statamic install
 - Unzip the Storyteller package
 - Replace the contents of `site` and `assets` with those from the package
-- Create a super user to access the Control Panel
-
-## Customizing
-
-Storyteller is essentially drop-and-go for new sites. You can modify some design elements in the Globals area to make it your own. And if you want to really go at it, you can mess around in the templates. Everything uses [Tailwind](https://tailwindcss.com) so it's very easy to make changes.
+- Run the following commands:
 
 ```
 cd site/themes/storyteller
-yarn && yarn run dev
+
+# NPM
+npm install
+npm run prod
+
+# Yarn
+yarn && yarn run prod
 ```
+
+And see how small your CSS could be!
+
+> NB: The one main drawback of this approach is that concatenating variables into class names in your templates (i.e. `class="h-{{ height }}"`) will actually break your theme as the PurgeCSS extractor will not know what you intend from this. One fix for this is to put the full style name into your variables/fieldset options.
