@@ -21,13 +21,13 @@ fields:
   blend_mode:
     display: Background Blend Mode
     type: select
-    default: none
+    default: mix-none
     width: 50
     options:
-      none: none
-      overlay: overlay
-      soft-light: soft-light
-      multiply: multiply
+      mix-none: none
+      mix-overlay: overlay
+      mix-soft-light: soft-light
+      mix-multiply: multiply
   section_2:
     display: Article Content
     type: section
@@ -58,13 +58,13 @@ fields:
           blend_mode:
             display: Blend Mode
             type: select
-            default: none
+            default: mix-none
             width: 33
             options:
-              none: none
-              overlay: overlay
-              soft-light: soft-light
-              multiply: multiply
+              mix-none: none
+              mix-overlay: overlay
+              mix-soft-light: soft-light
+              mix-multiply: multiply
           headline:
             type: text
           subhead:
