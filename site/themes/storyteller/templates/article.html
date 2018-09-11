@@ -4,7 +4,7 @@ footer_class: pt-3
 
 <div class="content bg-white pb-5 -mt-5">
 
-    {{ partial:hero :headline="title" :subhead="subtitle" height="screen" show_topic="true" }}
+    {{ partial:hero :headline="title" :subhead="subtitle" height="h-screen" show_topic="true" }}
 
     {{ story }}
         {{ if type == "hero" }}
@@ -18,7 +18,7 @@ footer_class: pt-3
         {{ /if }}
 
         {{ if type == "image" }}
-            <img src="{{ image }}" class="mx-auto mt-5 block max-w-{{ size }}">
+            <img src="{{ image }}" class="mx-auto mt-5 block {{ size }}">
             {{ if image | get:alt }}<p class="text-base text-grey-dark text-center mt-2 mb-5 italic">{{ image | get:alt }}</p>{{ /if }}
         {{ /if }}
 
