@@ -1,6 +1,6 @@
-# Storyteller Theme 2.0
+# Storyteller 2.0
 
-This site theme is a fork of [Storyteller](https://github.com/statamic/theme-storyteller) by Statamic. It's not meant for production. It merely exists as a demonstration of how you could set up Tailwind in a Statamic theme.
+This [Statamic](https://statamic.com) site theme is a fork of [Storyteller](https://github.com/statamic/theme-storyteller) by Statamic. It's not meant for production. It merely exists as a demonstration of how you could set up Tailwind in a Statamic theme.
 
 The goal is a setup that allows you to use the full power of Tailwind to build an absolute minimal stylesheet. In most cases, you can reduce your stylesheet to less than 20% of its original size.
 
